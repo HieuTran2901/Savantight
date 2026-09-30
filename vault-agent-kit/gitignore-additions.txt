@@ -1,0 +1,17 @@
+# Hòa vào .gitignore hiện có; không ghi đè toàn bộ
+.agent-local.json
+.coord-local/
+node_modules/
+target/
+dist/
+coverage/
+*.log
+.env
+.env.*
+!.env.example
+local-vaults/
+local-backups/
+local-evidence-sensitive/
+
+# Không ignore toàn bộ migrations, generated contracts hoặc sanitized test fixtures.
+# Real vault/backup paths nên ở OS app data, ngoài repo.
